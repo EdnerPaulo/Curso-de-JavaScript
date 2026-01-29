@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    
+    <!-- Campos do formulário ficam aqui -->
+    <form>
+       
+    
+    <!--Campos de Texto Simples-->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    
+    </br>
+    
+    <!--Caixas de Seleção (Checkbox)-->    
+    <label>
+        <input type="checkbox" name="lembrar"> Lembrar de mim
+    </label>
+    </br>
+    
+    <!--Botões de Opção (Radio Buttons)-->    
+    <label>
+        <input type="radio" name="genero" value="masculino"> Masculino
+    </label>
+    <label>
+        <input type="radio" name="genero" value="feminino"> Feminino
+    </label>
+    </br>
+    
+    <!--Menu Suspenso (Dropdown)-->    
+    <label for="cidade">Cidade:</label>
+    <select id="cidade" name="cidade">
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+    </select>
+    </br></br>
+    
+    <!--Área de Texto (Textarea)-->    
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem"></textarea>
+    </br>
+    
+    <!--Botão de Envio-->    
+    <button type="submit">Enviar</button>
+    
+    
+</form>
+    <form>
+        </br>
+        </br>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome">
+        </br>
+        <label for="email">E-mail:     </label>
+        <input type="email" id="email" name="email">
+        </br>   
+        <label for="mensagem">Sua mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+        </br>   
+        <button type="submit">Enviar mensagem</button>
+        </form>
+    </body>
+</html>
