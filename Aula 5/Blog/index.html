@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajante de Ideias Únicas</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0ffff; 
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+        header {
+            background-color: #2c3e50;
+            color: white;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+        }  
+        main {
+            max-width: 800px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        section, article {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 10px solid #2c3e50;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        /* --- NOVO CSS PARA IMAGENS LADO A LADO --- */
+        .item-flex {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espaço entre texto e imagem */
+            margin-bottom: 15px;
+        }
+
+        .item-flex img {
+            width: 200px; /* Tamanho aceitável */
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        /* Ajuste para a lista de curiosidades */
+        #curiosidades ul li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            list-style: none;
+        }
+
+        #curiosidades img {
+            width: 120px;
+            border-radius: 5px;
+        }
+        /* ---------------------------------------- */
+
+        .btn-cta {
+            display: inline-block;
+            background-color: #d80707;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .btn-cta:hover {
+            background-color: #a00505;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #d80707;">Blog Pessoal de EP(Edner Paulo)</h1>
+        <h2 style="color: #79ee0c;">Viajante de Ideias Únicas</h2>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Quem sou Eu e para que um blog</a></li>
+                <li><a href="#tecnologias">Linha do Tempo das Tecnologias</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>Edner Paulo, explorando o passado para entender o futuro.</h2>
+            <p>Olá! Eu sou o <strong>Edner Paulo</strong>. Sou um explorador de ideias que adora entender como as coisas surgiram. Este blog é meu diário de bordo para compartilhar o "de onde, quando e como" das tecnologias que moldaram o mundo.</p>
+        </section>
+
+        <section id="tecnologias">
+            <h2>As Eras</h2>
+            <h2>Linha do Tempo das Tecnologias</h2>
+            
+            <div class="item-flex">
+                <div>
+                    <h3>🔥 Primórdios</h3>
+                    <p>A origem do fogo e da roda. Quando a humanidade decidiu que cansaço e frio eram opcionais.</p>
+                </div>
+                <a href="eras.html#era-primordios"><img src="img/roda.jpg" alt="roda de fogo"></a>
+            </div>
+            
+            <hr>
+            
+            <div class="item-flex">
+                <div>
+                    <h3>⚡ A Era da Força</h3>
+                    <p>Vapor e eletricidade. O momento em que o mundo começou a correr de verdade.</p>
+                </div>
+                <a href="eras.html#era-forca"><img src="img/trens.png" alt="trens"></a>
+            </div>
+            
+            <hr>
+            
+            <div class="item-flex">
+                <div>
+                    <h3>🤖 Era Digital</h3>
+                    <p>IA, Internet e Smartphones. O futuro que já chegou (e que às vezes trava).</p>
+                </div>
+                <a href="eras.html#era-digital"><img src="img/futuro.png" alt="tecnologias"></a>
+            </div>
+        </section>
+
+        <section id="curiosidades">
+            <h2>Espaço das Curiosidades</h2>
+            <ul>
+                <li>
+                    <span><strong>Tecnologias Ancestrais:</strong> Como faziam cirurgias há 5 mil anos?</span>
+                    <a href="medicina.html"><img src="img/cirurgia.jpg" alt="antigos cirurgiãos"></a>
+                </li>
+                <li>
+                    <span><strong>Cidades Antigas Perdidas:</strong> O Wi-Fi de Atlântida (brincadeira!).</span>
+                    <a href="cidades.html"><img src="img/cidade.jpg" alt="cidades Perdidas"></a>
+                </li>
+                <li>
+                    <span><strong>Tecnologias "Alienígenas":</strong> Coisas tão avançadas que parecem de outro mundo.</span>
+                    <a href="tecnologia.html"><img src="img/alien.jpg" alt="tecnologia alien"></a>
+                </li>
+            </ul>
+        </section>
+
+        <article>
+            <div class="item-flex">
+                <div>
+                    <h2>Destaque do Mês: A Primeira "Live" foi com Fogo?</h2>
+                    <p>Imagine o primeiro humano que conseguiu dominar o fogo... ele com certeza foi o influencer mais popular da caverna.</p>
+                    <a href="fogo.html" class="btn-cta">Ler post completo</a>
+                </div>
+                <a href="fogo.html"> <img src="img/influencer.jpg" alt="fogo influencer"></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Viajante de Ideias Únicas - Criado por Edner Paulo no GitHub</p>
+    </footer>
+</body>
+</html>
