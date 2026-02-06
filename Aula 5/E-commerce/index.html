@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilúmina Casa - Ilumine Seu Espaço com Design</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40; 
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #007bff; 
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 span {
+            color: #ffc107; 
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007bff; 
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 5px 10px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: #007bff;
+        }
+
+        main {
+            flex-grow: 1;
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        section.produto-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #e9ecef; 
+        }
+
+        section.produto-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        section.produto-card h2 {
+            color: #007bff;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            min-height: 70px;
+        }
+
+        section.produto-card img {
+            max-width: 100%;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #fcfcfc;
+        }
+
+        section.produto-card p {
+            font-size: 1rem;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .preco {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #d80707;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .destaque-caracteristica {
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .botao-comprar {
+            display: inline-block;
+            background-color: #28a745; 
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .botao-comprar:hover {
+            background-color: #218838;
+            transform: translateY(-3px);
+        }
+
+        article.info-adicional {
+            grid-column: 1 / -1;
+            background-color: #007bff;
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        article.info-adicional h2 {
+            color: #ffc107;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            main { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><span>Ilúmina </span> Casa</h1>
+        <p>Ilumine Seu Espaço com Design e Inovação</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#poltrona">Poltrona Iluminada</a></li>
+            <li><a href="#cama">Cama Flutuante</a></li>
+            <li><a href="#guarda-roupa">Guarda-Roupa LED</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="produto-card" id="poltrona">
+            <h2>Poltrona Iluminada LED - Design e Brilho</h2>
+            <img src="assets/img/poltrona.webp" alt="Poltrona Iluminada" loading="lazy">
+            <p>Transforme seu ambiente com a <strong>Poltrona Decorativa LED</strong>. Ideal para interiores ou jardins, ela moderniza sua casa com elegância e um toque futurista. Feita de polietileno rotomoldado, é super resistente e fácil de limpar. Leve o brilho da inovação para seu lar!</p>
+            <span class="destaque-caracteristica">✨ Toque de Luz e Estilo</span>
+            <span class="preco">R$ 1.299,90</span>
+            <a href="#" class="botao-comprar">Comprar Agora</a>
+        </section>
+
+        <section class="produto-card" id="guarda-roupa">
+            <h2>Guarda-roupa Casal Imperatriz - Luxo e LED</h2>
+            <img src="assets/img/armario.jpg" alt="Guarda-roupa com LED" loading="lazy">
+            <p>O <strong>Guarda-roupa Imperatriz com LED</strong> une funcionalidade e luxo. Com acabamento Off White, oferece amplo espaço e luzes LED integradas que facilitam sua rotina e adicionam sofisticação ao quarto.</p>
+            <span class="destaque-caracteristica">💡 Iluminação Interna, Elegância Externa</span>
+            <span class="preco">R$ 2.499,99</span>
+            <a href="#" class="botao-comprar">Comprar Agora</a>
+        </section>
+
+        <section class="produto-card" id="cama">
+            <h2>Cama Flutuante - O Sonho que Levita</h2>
+            <img src="assets/img/cama-flutuante.webp" alt="Cama Flutuante" loading="lazy">
+            <p>Experimente o conforto revolucionário da <strong>Cama Flutuante</strong>. Com design orgânico e bases arredondadas, ela une estética sofisticada e robustez. Montagem simples, sem parafusos, e pés escondidos que criam o incrível efeito de levitação.</p>
+            <span class="destaque-caracteristica">☁️ Conforto Suspenso, Montagem Rápida</span>
+            <span class="preco">R$ 3.899,00</span>
+            <a href="#" class="botao-comprar">Comprar Agora</a>
+        </section>
+
+
+        <article class="info-adicional" id="sobre">
+            <h2>Ilúmina Casa: Onde o Design Encontra a Luz!</h2>
+            <p>Selecionamos peças que não apenas decoram, mas inspiram e transformam cada ambiente. Explore nossa coleção e renove seu espaço com bom gosto.</p>
+            <a href="#" class="botao-comprar" style="background-color: #ffc107; color: #007bff;">Descubra Mais Produtos</a>
+        </article>
+    </main>
+
+    <footer id="contato">
+        <p>&copy; 2026 Ilúmina Casa. Todos os direitos reservados. | Contato: (XX) XXXX-XXXX</p>
+        <p>Siga-nos: Instagram | Facebook | Pinterest</p>
+    </footer>
+
+</body>
+</html>
