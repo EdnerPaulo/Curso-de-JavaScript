@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic+Guides&display=swap');
+
+:root{
+    --cor-fundo: #f1f5f9;
+    --cor-card: #ffffff;
+    --cor-primaria: #2563eb;
+    --cor-secundaria: #16a34a;
+    --cor-texto: #333;
+    --cor-alerta: red;
+    --fundo-card-principal: #4ce600;
+    --cor-paragrafo_azul: var(--cor-primaria);
+    --cor-paragrafo_verde:var(--cor-secundaria);
+    --cor-paragrafo_vermelho: var(--cor-alerta);
+
+    
+
+    --font-subtitulo: "Playwrite NZ Basic Guides", cursive;
+    --font-padrao: 'Arial,sans-serif';
+    --raio:10px;
+    --sombra: 10px 24px 30px rgba(24, 124, 138, 0.1) ;
+    --espacamento:16px;
+    --espacamento-2:30px;
+    --espacamento-superios:20px;
+
+
+}
+body{
+    margin: 0;
+    padding: 40px;
+    background-color: var(--cor-fundo);
+    font-family: var(--font-padrao);
+    color: var(--cor-texto);
+}
+h1{
+    text-align: center;
+    margin-bottom: var(--espacamento-2);
+}
+
+.cards{
+    background-color: var(--fundo-card-principal);
+    padding: var(--espacamento);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    border-top: var(--espacamento);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+    gap: 20px;
+}
+.card_azul{
+    background-color: var(--cor-card);
+    margin: var(--espacamento-superios) ;    
+    padding: var(--espacamento);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    border-top: var(--espacamento);
+}
+.card_vermelho{
+    background-color: var(--cor-card);
+    margin: var(--espacamento-superios) ;    
+    padding: var(--espacamento);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    border-top: var(--espacamento);
+}
+.card_verde{
+    background-color: var(--cor-card);
+    margin: var(--espacamento-superios) ;    
+    padding: var(--espacamento);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    border-top: var(--espacamento);
+}
+.card_azul h2{
+    margin-top: 0;
+    font-size: 25px;
+}
+.card_verde h2{
+    margin-top: 0;
+    font-size: 25px;
+}
+.card_vermelho h2{
+    margin-top: 0;
+    font-size: 25px;
+}
+.card_azul p{
+    color: var(--cor-paragrafo_azul);
+}
+.card_verde p{
+    color: var(--cor-paragrafo_vermelho);
+}
+.card_vermelho p{
+    color: var(--cor-paragrafo_verde);
+}
+.card_azul h3{
+    font-family: var(--font-subtitulo);
+}
+.card_verde h3{
+    font-family: var(--font-subtitulo);
+}
+.card_vermelho h3{
+    font-family: var(--font-subtitulo);
+}
