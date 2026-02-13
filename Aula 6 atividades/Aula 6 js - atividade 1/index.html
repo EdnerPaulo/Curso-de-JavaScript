@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estilizando paginas</title>
+</head>
+<body>
+        <h1>CALCULO DO IMC</h1>
+
+        <p>INSIRA O PESO E A SUA ALTURA E DESCUBRA SEU IMC</p>
+        <h3>PESO</h3>
+        <input type="text" id="peso" placeholder="Digite seu peso">
+        <h3>ALTURA</h3>
+        <input type="text" id="altura" placeholder="Digite seu peso">
+        <br><br>
+        <button class="btn" type="submit" onclick="document.getElementById('resultado').innerHTML =' IMC ' + Math.round((document.getElementById('peso').value)/((document.getElementById('altura').value) * (document.getElementById('altura')).value)).toFixed(2) "> CALCULAR </button>
+        
+        <br><br>
+        <div id="resultado">RESULTADO DO IMC</div>
+        <br><br>
+
+        <img src="imagem.png" alt="imagem do IMC" >
+
+    </body>
+</html>

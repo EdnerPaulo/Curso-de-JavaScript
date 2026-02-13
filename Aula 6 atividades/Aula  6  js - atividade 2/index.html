@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estilizando paginas</title>
+    <script src="script.js"></script>
+</head>
+<body>
+        <h1>Calculadora pratica</h1>
+
+        <p>Insira um valor</p>
+        <!-- <label for="text">Digite um valor para ser calculado</label> -->
+        <input type="text" id="valor1" placeholder="Digite seu numero">
+        <br><br>
+        <!-- <label for="text">Digite outro valor para ser calculado</label> -->
+        <input type="text" id="valor2" placeholder="Digite seu numero">
+        <br><br>
+        <button type='button' class= "btn-soma" onclick="Soma()">Soma</button>
+        <button type='button' class= "btn-sub" onclick="Subtracao()">Subtração</button>
+        <button type='button' class= "btn-mult" onclick="Multiplicacao()" >Multiplicação</button>
+        <button type='button' class= "btn-div" onclick="Divisao()">Divisão</button>
+        <br>
+        <h3>Resultado do calculo</h3>
+        <div id="resultado"></div>
+        <br><br>
+
+       
+    </body>
+</html>

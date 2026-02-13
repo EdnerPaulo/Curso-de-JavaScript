@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+
+:root{
+    --fundo : #d3d3d3;
+    --fonte :  font-family: "Playwrite AT", cursive;
+    --cor-fonte : #376676;
+    --raio : 20px;
+    --espacemento-interno: 15px; 
+
+}
+
+body{
+    margin:  10px;
+    background-color: var(--fundo);
+    text-align: center;
+    font-family: var(--fonte);
+
+}
+img{
+    align-items: center;
+    border-radius: var(--raio);
+    width: 400px;
+}
+
+.btn{
+    height: 35px;
+    width: 90px;
+    text-align: center;
+    margin-top: 35px;
+    border-radius: var(--raio);
+
+}
