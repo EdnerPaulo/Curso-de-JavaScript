@@ -1,0 +1,34 @@
+Atividade Pratica:
+
+Lista de Atividades: Operadores Lógicos e Condicionais
+
+1 - Verificador de Números
+Peça um número ao usuário e verifique se é positivo, negativo ou zero.
+
+promt()
+
+2 - Verificador de Votação
+Peça a idade do usuário e verifique se pode votar .
+
+3 - Par ou Ímpar
+Declare um número qualquer e determine se é par ou ímpar.
+
+4 - Classificador de Triângulos
+Peça 3 números ao usuário e classifique o triângulo como:
+
+Equilátero (todos lados iguais)
+
+Isósceles (dois lados iguais)
+
+Escaleno (todos lados diferentes)
+
+5 - Múltiplo de  8 e 16
+Verifique se um número é múltiplo de 8 e 16 simultaneamente.
+
+6 - Número Positivo e Maior que 15
+Verifique se um número atende às duas condições:
+
+positivo e maior que 15
+
+7 - Divisível por 9 ou 6
+Verifique se um número é divisível por 9 ou .6
