@@ -1,0 +1,32 @@
+// INTRODUÇÃO AO DESAFIO
+
+
+
+let itens  =  ['item 1', 'item 2']
+
+
+let pergunta  =  prompt('deseja pedir? s/n')
+
+
+let compras  =  []
+
+
+while (pergunta == 's'){
+    
+    
+
+
+    let quantos =  Number(prompt('Quantidade: '))
+    for (n = 0;n<=quantos;n++){
+
+
+
+
+    }
+
+
+    pergunta  =  prompt('deseja pedir? s/n')
+     
+
+
+}
