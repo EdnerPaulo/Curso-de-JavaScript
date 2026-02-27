@@ -1,0 +1,53 @@
+
+
+
+// INTRODUÇÃO AO DESAFIO DA AULA 8
+
+
+
+let itens  =  ['item 1', 'item 2', 'item 3 ']
+
+
+let pergunta  =  prompt('deseja pedir? s/n')
+
+
+let  compras  =  [] 
+
+
+while (pergunta == 's'){
+    
+
+
+    let escolha  =  prompt('1 add | 2 remover | 3 listar')
+    if (escolha == '1'){
+           
+        let quantos =  Number(prompt('Quantidade: '))
+        for (n = 0;n<quantos;n++){
+            let id =  Number(prompt('digite o ID: '))
+            compras.push(itens[id])
+            console.log(compras)
+            pergunta  =  prompt('deseja continuar? s/n')
+
+
+        }
+    }else if(escolha == '2'){
+        let rmv =  Number(prompt('id para remover: '))
+        compras.splice(rmv,1) 
+        console.log(compras)
+        pergunta  =  prompt('deseja continuar? s/n')
+
+
+    }else{
+
+
+        console.log(compras)
+        pergunta  =  prompt('deseja continuar? s/n')
+    }
+
+
+    
+     
+    console.log(compras)
+}
+
+
