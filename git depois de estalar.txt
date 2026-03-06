@@ -1,0 +1,46 @@
+git depois de estalar 
+
+C:\Users\Aluno>cd downloads
+abrir um local na maquina
+
+como clonar um repositório
+
+C:\Users\Aluno\Downloads>git clone https://github.com/bea3853/ATIVIDADE---TREX.git
+
+Cloning into 'ATIVIDADE---TREX'...
+remote: Enumerating objects: 31, done.
+remote: Counting objects: 100% (31/31), done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 31 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (31/31), 1.05 MiB | 7.97 MiB/s, done.
+
+para confirmar se foi clonado 
+
+C:\Users\Aluno\Downloads>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é C28D-97FD
+
+ Pasta de C:\Users\Aluno\Downloads
+
+05/03/2026  19:36    <DIR>          .
+10/09/2025  18:28    <DIR>          ..
+05/03/2026  19:36    <DIR>          ATIVIDADE---TREX
+05/03/2026  19:32        64.573.288 Git-2.53.0-64-bit.exe
+               1 arquivo(s)     64.573.288 bytes
+               3 pasta(s)   860.676.374.528 bytes disponíveis
+
+entre na pasta 
+C:\Users\Aluno\Downloads>cd ATIVIDADE---TREX
+
+C:\Users\Aluno\Downloads\ATIVIDADE---TREX>
+
+entre dentro de um compilador ou uma feramenta pra código 
+
+C:\Users\Aluno\Downloads\ATIVIDADE---TREX>code .
+aqui o vscode
+
+entrando em uma pasta especifica 
+
+C:\Users\Aluno\Downloads\ATIVIDADE---TREX>cd JogoTrex-main
+
+C:\Users\Aluno\Downloads\ATIVIDADE---TREX\JogoTrex-main>code .
